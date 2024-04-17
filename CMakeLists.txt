@@ -15,10 +15,26 @@ add_executable(algorithm_curriculum
 	recursion/queen_puzzle.cpp
 
 	dynamic_programming/max_sum_subarray.cpp
+	dynamic_programming/coin_change.cpp
+	dynamic_programming/max_increasing_subarray.cpp
+	dynamic_programming/net_path.cpp
+	dynamic_programming/knapsack_packing.cpp
+
+	sorting/bubble_sort.cpp
+	sorting/sweeping_line_algorithm.cpp
+
+	greedy_algorithms/work_schedule.cpp
+	greedy_algorithms/time_table.cpp
+
+	search/binary_search.cpp
 )
 
 if(MSVC)
   add_compile_options(algorithm_curriculum /W4 /WX)
+  set_property(TARGET algorithm_curriculum PROPERTY
+	MSVC_RUNTIME_LIBRARY "MultiThreadedDebugDLL<$<CONFIG:Debug>:Debug>")
+  set_property(TARGET algorithm_curriculum PROPERTY
+	MSVC_RUNTIME_LIBRARY "MultiThreadedDLL<$<CONFIG:Release>:Release>")
 else()
   add_compile_options(algorithm_curriculum -Wall -Wextra -Wpedantic -Werror)
 endif()

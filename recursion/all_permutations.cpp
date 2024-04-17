@@ -1,13 +1,13 @@
-
-#include <gtest/gtest.h>
 #include <vector>
 #include <algorithm>
 #include <numeric>
+#include <gtest/gtest.h>
 
 using PermutationType = std::vector<int>;
 using PermutationCol = std::vector<PermutationType>;
 
-void generate_all_permutations_recursive(const PermutationType& in, size_t position, std::vector<bool>& chosen, PermutationType& current, PermutationCol& result)
+void generate_all_permutations_recursive(const PermutationType& in, size_t position, std::vector<bool>& chosen,
+   PermutationType& current, PermutationCol& result)
 {
    if (in.size() == current.size())
    {
