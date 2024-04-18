@@ -33,5 +33,8 @@ size_t find_max_length(const Array& array)
 
 TEST(FindMaxLengthTest, SimpleTest)
 {
-   EXPECT_EQ(4, find_max_length({6, 2, 5, 1, 7, 4, 8, 3}));
+   EXPECT_EQ(4, find_max_length({ 6, 2, 5, 1, 7, 4, 8, 3 }));
+   EXPECT_EQ(0, find_max_length({  }));
+   EXPECT_EQ(6, find_max_length({ 1, 2, 3, 10, 11, 12 }));
+   EXPECT_EQ(1, find_max_length({ 12, 11, 10, 9, 5, 1 }));
 }

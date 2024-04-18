@@ -17,7 +17,7 @@ add_executable(algorithm_curriculum
 	dynamic_programming/max_sum_subarray.cpp
 	dynamic_programming/coin_change.cpp
 	dynamic_programming/max_increasing_subarray.cpp
-	dynamic_programming/net_path.cpp
+	dynamic_programming/grid_path.cpp
 	dynamic_programming/knapsack_packing.cpp
 
 	sorting/bubble_sort.cpp
@@ -27,6 +27,10 @@ add_executable(algorithm_curriculum
 	greedy_algorithms/time_table.cpp
 
 	search/binary_search.cpp
+
+	numeric/power.cpp
+	numeric/greatest_common_divisor.cpp
+	numeric/itoa.cpp
 )
 
 if(MSVC)
