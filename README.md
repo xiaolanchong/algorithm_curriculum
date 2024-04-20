@@ -15,5 +15,6 @@ Collection of the most useful and well-known algorithms
 
 ## Book list
 
-- A Laaksonen "Competitive Programmer's Handbook" https://cses.fi/book.pdf
+- A Laaksonen "Competitive Programmer's Handbook" https://cses.fi/book.pdf, 2018
 - А. Шень "Программирование: теоремы и задачи", 2004
+- Gayle McDonell "Cracking Code Interview", 2009

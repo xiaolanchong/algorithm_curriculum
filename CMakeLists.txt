@@ -22,6 +22,9 @@ add_executable(algorithm_curriculum
 
 	sorting/bubble_sort.cpp
 	sorting/sweeping_line_algorithm.cpp
+	sorting/selection_sort.cpp
+	sorting/merge_sort.cpp
+	sorting/quick_sort.cpp
 
 	greedy_algorithms/work_schedule.cpp
 	greedy_algorithms/time_table.cpp
