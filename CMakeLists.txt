@@ -34,6 +34,9 @@ add_executable(algorithm_curriculum
 	numeric/power.cpp
 	numeric/greatest_common_divisor.cpp
 	numeric/itoa.cpp
+
+	graphs/depth_first_search.cpp
+	graphs/breadth_first_search.cpp
 )
 
 if(MSVC)
