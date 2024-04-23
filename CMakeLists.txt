@@ -34,9 +34,20 @@ add_executable(algorithm_curriculum
 	numeric/power.cpp
 	numeric/greatest_common_divisor.cpp
 	numeric/itoa.cpp
+	numeric/fast_fourier_transform.cpp
 
 	graphs/depth_first_search.cpp
 	graphs/breadth_first_search.cpp
+	graphs/cycle_detection.cpp
+
+	graphs/shortest_path/bellman_ford.cpp
+	graphs/shortest_path/dijkstra.cpp
+	graphs/shortest_path/floyd_warshall.cpp
+
+	two_pointers/given_sum_subarray.cpp
+	two_pointers/remove_element.cpp
+
+	tree/diameter.cpp
 )
 
 if(MSVC)
