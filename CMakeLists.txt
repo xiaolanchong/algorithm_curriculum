@@ -48,6 +48,8 @@ add_executable(algorithm_curriculum
 	two_pointers/remove_element.cpp
 
 	tree/diameter.cpp
+
+	geometry/closest_points.cpp
 )
 
 if(MSVC)

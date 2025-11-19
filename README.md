@@ -39,9 +39,37 @@ Collection of the most useful and well-known algorithms
 1) Minimal Spanning Tree
   - Prim's algoritm
   - Kruskal's algorithm
+  
+#### Graphs Extended
 
-1) Successor graphs
-  - Cycle detection (Floyd's algorithm) X
+- Поиск всех путей
+- Построить дополнение
+- Компоненты слабой связности
+- Компоненты сильной связности
+- Проверка изоморфизма
+- Максимальный поток (preflow push)
+- Максимальный поток dinic
+- Эйлеров путь
+- Эйлеров цикл
+- Гамильтонов цикл
+- Разбиение на доли
+- Центр, радиус, диаметр
+- Поиск цикла
+- Мосты
+- Точки сочленения
+- Степени вершин
+- Топологическая сортировка
+- Раскраска (dsatur)
+
+
+# Strings
+
+## Editing distance
+
+## Substring finding
+
+- 
+- Knut
 
 
 ### Parallel bit lookup
