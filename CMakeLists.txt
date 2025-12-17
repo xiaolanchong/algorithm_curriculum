@@ -46,6 +46,7 @@ add_executable(algorithm_curriculum
 
 	two_pointers/given_sum_subarray.cpp
 	two_pointers/remove_element.cpp
+	two_pointers/stock_profit.cpp
 
 	tree/diameter.cpp
 
@@ -54,12 +55,14 @@ add_executable(algorithm_curriculum
 
 if(MSVC)
   add_compile_options(algorithm_curriculum /W4 /WX)
-  set_property(TARGET algorithm_curriculum PROPERTY
-	MSVC_RUNTIME_LIBRARY "MultiThreadedDebugDLL<$<CONFIG:Debug>:Debug>")
-  set_property(TARGET algorithm_curriculum PROPERTY
-	MSVC_RUNTIME_LIBRARY "MultiThreadedDLL<$<CONFIG:Release>:Release>")
+ 
+if(CMAKE_BUILD_TYPE STREQUAL "Debug")
+  set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>DLL")
 else()
+  set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Release>:Release>DLL")
+endif()
   add_compile_options(algorithm_curriculum -Wall -Wextra -Wpedantic -Werror)
+
 endif()
 
 target_link_libraries(algorithm_curriculum
